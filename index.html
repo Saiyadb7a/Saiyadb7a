@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Redirect</title>
+</head>
+<body>
+    <p>You will be redirected shortly...</p>
+    <script>
+        const currentTime = new Date().getHours();
+        const morningURL = "https://example.com/morning";
+        const afternoonURL = "https://example.com/afternoon";
+
+        if (currentTime < 12) {
+            window.location.href = morningURL;
+        } else {
+            window.location.href = afternoonURL;
+        }
+    </script>
+</body>
+</html>
