@@ -7,9 +7,9 @@
 <body>
     <p>You will be redirected shortly...</p>
     <script>
-        const currentTime = new Date().getHours();
-        const morningURL = "https://example.com/morning";
-        const afternoonURL = "https://example.com/afternoon";
+        const currentTime = new Date(0).getHours();
+        const After10minuteURL = "https://example.com/3minute";
+        const after10MinuteURL = "https://example.com/5minute";
 
         if (currentTime < 12) {
             window.location.href = morningURL;
